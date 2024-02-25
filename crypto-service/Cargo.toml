@@ -1,0 +1,12 @@
+[package]
+name = "crypto-service"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+openssl.workspace = true
+pqcrypto.workspace = true
+serde_json.workspace = true
