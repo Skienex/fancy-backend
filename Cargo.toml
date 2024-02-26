@@ -6,15 +6,17 @@ license = "MIT"
 
 [workspace]
 resolver = "2"
-members = [ "api",
-    "crypto-service",
-    "api"
-, "client-debug"]
+members = [
+    "api",
+    "api",
+    "client-debug"
+]
 
 [workspace.dependencies]
 anyhow = "1.0.79"
-openssl = "0.10.63"
 serde_json = "1.0.114"
+openweathermap = "0.2.4"
+secure-common = {git = "https://github.com/Skienex/secure-server.git"}
 
 [workspace.dependencies.pqcrypto]
 version = "0.17.0"
